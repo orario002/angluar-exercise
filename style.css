@@ -7,6 +7,9 @@
 
 body {
     font-family: 'Open Sans';
+    color: #7e7f8b;
+    font-size: 16p;
+    font-weight: 900;
 }
 
 h1 {
@@ -28,11 +31,47 @@ ul {
 }
 
 form {
-    margin: 5%;
-    background-image: url(https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/68/686/686196/low_poly9-f.jpg?1443588246) no-repeat;
+    width: 50%;
+    margin: 5% auto;
+    padding: 2%;
 }
 
 .comment-box {
     width: 500px;
     height: 100px;
+}
+    
+.comment-submit {
+  background-color: #2886bb;      
+ border-radius: 5%;
+    padding: 2%;
+    font-size: 1.2em;
+    color: #fff;
+    border: none;
+    }
+
+.companylogo {
+    background-image: url(http://www.ensemble.co.uk/wp-content/uploads/2014/11/logo-ensemble.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 100px;
+}
+
+.project-at-ensemble {
+    background-image: url(http://www.ensemble.co.uk/wp-content/uploads/2014/09/diagram-services.svg);
+        background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+    height: 300px;
+}
+
+
+.form-frame {
+    border: 1px #7e7f8b solid;
+    padding: 1%;
+    width: auto;
+}
+
+.contact-form {
+    text-align: center;
 }

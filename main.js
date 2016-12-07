@@ -3,8 +3,12 @@ app.controller('MainController', ['$scope', function($scope){
 		$scope.title = "Tells us about your new project.",
         $scope.subtitle = 
             {
+            description: "We would love to be part of your wonderful projects. First, how can we help?",
+            hello: " HELLO! ",
             name: "Who are you?",
             project : "What's your project?",
+            email : "Email",
+            phone : "Phone",
             service : "What services can we offer?",
             purpose : "What are this project for?",
             budget : "What's your budget?", 
@@ -16,6 +20,8 @@ app.controller('MainController', ['$scope', function($scope){
     $scope.new_site = {
         projectTitle : 'your name or your company name',
         projectSite  : 'https://mysite.com/',
+        projectEmail : 'my@email.com',
+        projectPhone : 'mobile or land line',
       services : [{
 			service : "Consulting",
             selected : false,
