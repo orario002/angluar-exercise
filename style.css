@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+h1 {
+    color: #2886bb; 
+    text-align: center;
+    font-weight: 900;
+}
+
+.complete {
+			text-decoration: line-through;
+}
+        
+li {
+            list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+form {
+    margin: 5%;
+    background-image: url(https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/68/686/686196/low_poly9-f.jpg?1443588246) no-repeat;
+}
+
+.comment-box {
+    width: 500px;
+    height: 100px;
+}
