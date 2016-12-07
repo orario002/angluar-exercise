@@ -75,3 +75,8 @@ form {
 .contact-form {
     text-align: center;
 }
+
+.hello {
+    font-size: 2em;
+    font-style: oblique;
+}
