@@ -1,0 +1,19 @@
+<html ng-app="myApp" ng-controller="myCtrl">
+    <head><script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script></head>
+    
+    <body>
+        <p>My name is {{name}}</p>
+    </body>
+    
+    <script>
+    
+    var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+        $scope.name = "who";
+    });
+    
+    </script>
+    
+    
+    
+</html>
