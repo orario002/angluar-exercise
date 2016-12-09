@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url(http://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2) format('woff2');
+}
+
+body {
+    font-family: 'Open Sans';
+    color: #7e7f8b;
+    font-size: 16p;
+    font-weight: 900;
+}
+
+h1 {
+    color: #2886bb; 
+    text-align: center;
+    font-weight: 900;
+}
+
+.complete {
+			text-decoration: line-through;
+}
+        
+li {
+            list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+form {
+    width: 50%;
+    margin: 5% auto;
+    padding: 2%;
+}
+
+.comment-box {
+    width: 500px;
+    height: 100px;
+}
+    
+.comment-submit {
+  background-color: #2886bb;      
+ border-radius: 5%;
+    padding: 2%;
+    font-size: 1.2em;
+    color: #fff;
+    border: none;
+    }
+
+.companylogo {
+    background-image: url(http://www.ensemble.co.uk/wp-content/uploads/2014/11/logo-ensemble.svg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    height: 100px;
+}
+
+.project-at-ensemble {
+    background-image: url(http://www.ensemble.co.uk/wp-content/uploads/2014/09/diagram-services.svg);
+        background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center;
+    height: 300px;
+}
+
+
+.form-frame {
+    border: 1px   solid;
+    padding: 1%;
+    width: auto;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.hello {
+    font-size: 2em;
+    font-style: oblique;
+}
+
+span.control-indicator {
+    background-color: #2886bb;
+    width: 12px;
+    height: 12px;
+}

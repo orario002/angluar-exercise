@@ -1,0 +1,56 @@
+<html ng-app="ContactApp">
+	<head>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body ng-controller="MainController">
+        <div class="companylogo"></div>
+        <h1>{{ title }}</h1>
+        
+        <div class="project-at-ensemble"></div>
+        <p class="contact-form description">{{subtitle.description}}</p>
+        <br/><br/><br/>
+        <p class="contact-form hello">{{subtitle.hello}}</p>
+        <p class="contact-form-">
+        <form ng-submit="submit()">
+            <p>{{subtitle.name}}</p><input class=form-frame ng-model="new_site.projectTitle" type="text"/>
+            <p>{{subtitle.project}}</p><input class=form-frame ng-model="new_site.projectSite" type="text"/>
+            <p>{{subtitle.email}}</p><input class=form-frame ng-model="new_site.projectEmail" type="email"/>
+              <p>{{subtitle.phone}}</p><input class=form-frame ng-model="new_site.projectPhone" type="number"/>
+            <ul>
+                <p>{{subtitle.service}}</p>
+			<li ng-repeat="item in new_site.services">
+                <input type="checkbox" ng-model="item.selected" />
+                <span class="control-indicator"></span>
+				{{item.service}}
+			</li>
+                
+                <p>{{subtitle.purpose}}</p>
+                <li ng-repeat="item in new_site.purposes">
+				<input type="checkbox" ng-model="item.selected" />
+                    <span class="control-indicator"></span>
+				{{item.purpose}}
+			</li>
+		</ul>
+            <p>{{subtitle.budget}}</p>
+            <div ng-init="budget">
+            <select ng-model="budget">
+                <option value="under1K"> under 10K </option>
+                <option value="10-20K"> 10-20K </option>
+                <option value="20-30K"> 20-30K </option>
+                <option value="30-40K"> 30-40K </option>
+                <option value="40-50K"> 40-50K </option>
+                <option value="50Kup"> more than 50K </option>
+                </select>
+            </div>
+            
+            <p>{{subtitle.other}}</p>
+            <input class="comment-box" ng-model="new_site.projectOther" type="text"/>
+            
+            <br/><br/><input class="form-frame comment-submit" type="submit" value="Submit"/>
+        </form>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
